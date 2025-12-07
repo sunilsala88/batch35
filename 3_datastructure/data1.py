@@ -18,3 +18,20 @@ print(l1[0:2])
 #update
 l1[-1]=60
 print(l1)
+
+#add
+l1.append(70)
+print(l1)
+
+l1.insert(1,15)
+print(l1)
+
+#delete
+l1.remove(15)
+print(l1)
+
+l1.pop(1)
+print(l1)
+
+del l1[-1]
+print(l1)
