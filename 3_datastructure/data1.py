@@ -34,4 +34,17 @@ l1.pop(1)
 print(l1)
 
 del l1[-1]
-print(l1)
+print(l1.index(60))
+
+
+t1=(44,55,66)
+print(t1)
+
+#index
+print(t1[0])
+
+#slicing
+print(t1[0:2])
+
+#index
+print(t1.index(66))
