@@ -32,3 +32,17 @@ print(avg)
 print(list(range(10)))
 print(list(range(10,20)))
 print(list(range(10,20,3)))
+
+for i in range(10):
+    print('hello world')
+
+#sum all number from 1 to 100
+
+
+#type 3 go through the list buy by using index
+
+l1=['Goog','amzn','tsla','ongc']
+
+for i in range(len(l1)):
+    print(l1[i])
+
