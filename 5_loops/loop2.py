@@ -11,5 +11,12 @@ print(list(stock_price.items()))
 
 
 #type 4
+h=0
+name=''
 for i,j in stock_price.items():
     print(i,j)
+    if j>h:
+        h=j
+        name=i
+print(name)
+
