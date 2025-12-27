@@ -39,3 +39,20 @@ f3=''
 for i in range(-1,-(len(s2)+1),-1):
     f3=f3+s2[i]
 print(f3)
+
+
+#8 table
+#8 *1 =8
+#8* 2= 16
+
+num=8
+for i in range(1,11):
+    print(num,' * ',i,'=',num*i)
+
+num=55
+data=[44,55,66,77,55,55,67,89]
+count=0
+for i in data:
+    if num==i:
+        count=count+1
+print(count)
