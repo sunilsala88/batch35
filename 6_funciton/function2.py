@@ -26,26 +26,37 @@ print(l)
 print(a)
 
 
+
 stock_price={'amzn':400,'tsla':489,'nifty':389,'goog':890}
-protfolio=[]
-name=''
-while True:
-    
-    if name=='tsla':
-        print('you cannot trade this right now try something else')
-        continue
 
-    name=input('enter the name of stock(q to exit)')
+def print_stocks():
+    for name,price in stock_price.items():
+        print(name,':',price)
 
-    if name.lower()=='q':
-        break
+def take_input():
+    protfolio={}
+    name=''
+    while True:
+        name=input('enter the name of stock(q to exit)')
+        
+        if name=='tsla':
+            print('you cannot trade this right now try something else')
+            continue
 
-    found=stock_price.get(name)
-    if found:
-        protfolio.append(name)
-    else:
-        print('unable to find the stock name type again')
-print(protfolio)
 
-#print_stocks
-#take_input
+
+        if name.lower()=='q':
+            break
+
+        found=stock_price.get(name)
+        if found:
+            protfolio.update({name:found})
+        else:
+            print('unable to find the stock name type again')
+    return (protfolio)
+
+print_stocks()
+p=take_input()
+print(p)
+
+#is_palindrome input string ,True False
