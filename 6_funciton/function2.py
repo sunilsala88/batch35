@@ -55,8 +55,26 @@ def take_input():
             print('unable to find the stock name type again')
     return (protfolio)
 
-print_stocks()
-p=take_input()
-print(p)
+# print_stocks()
+# p=take_input()
+# print(p)
 
 #is_palindrome input string ,True False
+
+def rev_str(s1):
+    s2=''
+    for i in s1:
+        s2=i+s2
+    return s2
+
+def is_palindrome(s1:str)->bool:
+
+    s2=rev_str(s1)  
+    print(s2)  
+    if s1==s2:
+        return True
+    else:
+        return False
+
+a=is_palindrome('radai')
+print(a)
