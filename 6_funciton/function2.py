@@ -78,3 +78,24 @@ def is_palindrome(s1:str)->bool:
 
 a=is_palindrome('radai')
 print(a)
+
+
+#flow of funtion
+
+def fun1(a,b):
+    return a**2+b
+def fun2(x,y,z):
+    a=fun1(x,y) #3
+    a=a+z #6
+    return a
+
+def fun3(i,j,k):
+
+    n=fun1(j,k) #7
+    m=fun2(i,j,k) #6
+    return n+m
+
+t=fun3(1,2,3)
+print(t)
+
+
