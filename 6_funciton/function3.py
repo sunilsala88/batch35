@@ -31,3 +31,17 @@ print(a)
 
 # word1=f"my name is {name} and my age is {age}"
 # print(word1)
+
+
+def add_numbers(*args):
+    print(args)
+    return sum(args)
+
+print(add_numbers(1, 2, 3, 4))
+
+def print_details(**kwargs):
+    print(kwargs)
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_details(name="Anil", age=30, country="India")
