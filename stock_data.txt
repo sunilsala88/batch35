@@ -1,0 +1,3 @@
+amzn:400
+goog:890
+nifty:389

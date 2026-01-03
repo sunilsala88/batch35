@@ -1,1 +1,2 @@
-goog=200
+tsla=200ongc=200
+nifty=900
