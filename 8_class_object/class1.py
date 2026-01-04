@@ -67,3 +67,25 @@ print(balance)
 
 balance=a1.withdraw(500)
 print(balance)
+
+
+class Broker:
+    broker_name='ibk'
+    stock_prices={'tsla':100,'amzn':500,'nifty':700,'ongc':6000}
+
+    def __init__(self,name,no,balance):
+        self.name=name
+        self.id=id
+        self.wallet=balance
+        self.portfolio={}
+
+    
+    def get_port(self):
+        for i,j in self.portfolio():
+            print(i,j)
+    
+    def buy(self,name):
+        pass
+
+    def sell(self,name):
+        pass
