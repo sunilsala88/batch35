@@ -51,7 +51,7 @@ def take_input():
 
 
 def save_data(portfolio:dict)->None:
-    f1=open('stock_data.txt','+a')
+    f1=open('stock_data.txt','a')
     for name,price in portfolio.items():
         d=name+':'+str(price)+'\n'
         f1.write(d)
