@@ -39,3 +39,31 @@ print(p)
 b2=book('basics of statistics','james',1000)
 p=b2.get_price()
 print(p)
+
+
+class Bank:
+    bank_name='jpmorgan'
+
+    def __init__(self,name,no,balance):
+        self.name=name
+        self.id=no
+        self.balance=balance
+    
+    def get_balance(self):
+        return self.balance
+    
+    def deposit(self,money):
+        self.balance=self.balance+money
+        return self.balance
+    
+    def withdraw(self,money):
+        self.balance=self.balance-money
+        return self.balance
+    
+a1=Bank('sunil',450,2000)
+print(a1.get_balance())
+balance=a1.deposit(100)
+print(balance)
+
+balance=a1.withdraw(500)
+print(balance)
