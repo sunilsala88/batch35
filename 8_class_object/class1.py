@@ -15,9 +15,7 @@
 #constructor is the first method which is executed when you crate a object
 
 
-def get_price():
-    return 100
-
+stock_name='tsla'
 
 class book:
     book_type='paper'
@@ -27,8 +25,17 @@ class book:
         self.name=name
         self.author=author
         self.price=price
+        
+
+    def get_price(self):
+        return self.price
+
 
 
 b1=book('option pricing','john hull',2000)
+p=b1.get_price()
+print(p)
 
-p=get_price()
+b2=book('basics of statistics','james',1000)
+p=b2.get_price()
+print(p)
