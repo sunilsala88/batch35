@@ -75,17 +75,49 @@ class Broker:
 
     def __init__(self,name,no,balance):
         self.name=name
-        self.id=id
+        self.id=no
         self.wallet=balance
         self.portfolio={}
 
+    def __repr__(self):
+        return self.name
+
     
     def get_port(self):
-        for i,j in self.portfolio():
-            print(i,j)
-    
+        print('----------')
+        if self.portfolio:
+            for i,j in self.portfolio.items():
+                print(i,j)
+  
     def buy(self,name):
-        pass
+        found=self.stock_prices.get(name)
+        if found:
+            if self.wallet>found:
+                self.portfolio.update({name:found})
+                self.wallet=self.wallet-found
+            else:
+                print('you dont have enough money to buy')
+        else:
+            print('unable to buy this stock')
 
     def sell(self,name):
-        pass
+        found=self.portfolio.get(name)
+        if found:
+            
+                self.portfolio.pop(name)
+                self.wallet=self.wallet+found
+           
+        else:
+            print('unable to buy this stock')
+
+
+u1=Broker('sunil',340,1000)
+u1.get_port()
+u1.buy('tsla')
+u1.get_port()
+u1.buy('amzn')
+u1.get_port()
+
+u1.sell('tsla')
+u1.get_port()
+print(u1)
