@@ -40,7 +40,9 @@ class Order:
         self.take_profit=tp
         self.fill=False
         self.position=False
-        
+    
+    def __repr__(self):
+        return self.name+ 'order at '+ str(self.current_price)
     
     def palce_order(self):
         print('places market order')
@@ -68,7 +70,7 @@ class Order:
 
 a1=Order('amzn',101,5,5)
 a1.palce_order()
-
+print(a1)
 l1=[100,100,101,96,94,93,92,100,102,106,110]
 for price in l1:
     print(f'current price is {price} and sl {a1.stop_value} is and tp is {a1.take_profit_value}')
