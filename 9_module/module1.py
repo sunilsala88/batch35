@@ -17,3 +17,11 @@ c1=file2.Circle(10)
 print(c1)
 
 print(t1.free)
+
+from file3 import a1,b2,Order
+from file3 import *
+print(a1)
+
+import random
+import time
+print(random.randint(1000,2000))
