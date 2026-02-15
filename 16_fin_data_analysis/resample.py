@@ -15,7 +15,7 @@ df_5min = data.resample('5min').agg({
     'Low': 'min',
     'Close': 'last',
     'Volume': 'sum'
-}).dropna()
+})
 
-print(df_5min)
-df_5min.to_csv('TSLA_1D.csv')
+import mplfinance as mpf
+mpf.plot(df_5min,type='candle',style='yahoo')

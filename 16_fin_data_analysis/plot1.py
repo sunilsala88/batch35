@@ -10,4 +10,4 @@ data=yf.download('TSLA',start=s,end=e,multi_level_index=False,interval='1m',igno
 
 print(data)
 import mplfinance as mpf
-mpf.plot(data,type='candle')
+mpf.plot(data,type='candle',style='yahoo')
