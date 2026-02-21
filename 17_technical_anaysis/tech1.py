@@ -74,7 +74,27 @@ def macd(
 	offset: Optional[int] = None,
 	**kwargs: Dict[str, Any],
 ) -> pd.DataFrame:
-	"""Moving Average Convergence Divergence (standalone, no pandas_ta dependency)."""
+	"""Compute MACD using only pandas operations.
+
+	Inputs:
+		close: Price series (typically close prices).
+		fast: Fast EMA period. Default is 12.
+		slow: Slow EMA period. Default is 26.
+		signal: Signal EMA period applied on MACD line. Default is 9.
+		talib: Kept for API compatibility; not used in this standalone version.
+		offset: Shift output columns by this many periods.
+		kwargs:
+			asmode (bool): If True, uses AS mode (MACD := MACD - signal).
+			fillna (Any): Fill NaN values in MACD, histogram, and signal columns.
+			signal_indicators (bool): If True, append crossover signal columns.
+
+	Output:
+		A DataFrame indexed like ``close`` with 3 base columns:
+		- ``MACD_{fast}_{slow}_{signal}`` (or ``MACDAS_...`` in AS mode)
+		- ``MACDh_{fast}_{slow}_{signal}`` (histogram)
+		- ``MACDs_{fast}_{slow}_{signal}`` (signal line)
+		If ``signal_indicators=True``, extra binary crossover columns are concatenated.
+	"""
 	fast = int(fast) if isinstance(fast, int) and fast > 0 else 12
 	slow = int(slow) if isinstance(slow, int) and slow > 0 else 26
 	signal = int(signal) if isinstance(signal, int) and signal > 0 else 9
@@ -199,7 +219,28 @@ def bbands(
 	offset: Optional[int] = None,
 	**kwargs: Dict[str, Any],
 ) -> pd.DataFrame:
-	"""Bollinger Bands (standalone, no pandas_ta dependency)."""
+	"""Compute Bollinger Bands using only pandas operations.
+
+	Inputs:
+		close: Price series (typically close prices).
+		length: Moving window length. Default is 5.
+		lower_std: Lower band standard deviation multiplier. Default is 2.0.
+		upper_std: Upper band standard deviation multiplier. Default is 2.0.
+		ddof: Delta degrees of freedom for rolling std. Default is 1.
+		mamode: Basis moving average mode: ``"sma"`` or ``"ema"``.
+		talib: Kept for API compatibility; not used in this standalone version.
+		offset: Shift output columns by this many periods.
+		kwargs:
+			fillna (Any): Fill NaN values in all output columns.
+
+	Output:
+		A DataFrame indexed like ``close`` with 5 columns:
+		- ``BBL_{length}_{lower_std}_{upper_std}``: lower band
+		- ``BBM_{length}_{lower_std}_{upper_std}``: middle band
+		- ``BBU_{length}_{lower_std}_{upper_std}``: upper band
+		- ``BBB_{length}_{lower_std}_{upper_std}``: bandwidth (%)
+		- ``BBP_{length}_{lower_std}_{upper_std}``: percent position in band range
+	"""
 	length = int(length) if isinstance(length, int) and length > 0 else 5
 	if close is None:
 		return pd.DataFrame()
@@ -285,11 +326,19 @@ print(m)
 
 
 
-import pandas_ta as ta
-m1=ta.macd(data['Close'])
-print(m1)
+# s1=mpf.make_addplot(data['sma'],color='blue')
+# s2=mpf.make_addplot(data['ema'],color='red')
+# mpf.plot(data,type='candle',style='yahoo',addplot=[s1,s2])
 
 
-s1=mpf.make_addplot(data['sma'],color='blue')
-s2=mpf.make_addplot(data['ema'],color='red')
-mpf.plot(data,type='candle',style='yahoo',addplot=[s1,s2])
+
+# lower=mpf.make_addplot(b['BBL_12_2.0_2.0'],color='blue')
+# middle=mpf.make_addplot(b['BBM_12_2.0_2.0'],color='red')
+# upper=mpf.make_addplot(b['BBU_12_2.0_2.0'],color='green')
+# mpf.plot(data,type='candle',style='yahoo',addplot=[lower,middle,upper])
+
+
+macd=mpf.make_addplot(m['MACD_12_26_9'],color='blue',panel=1)
+signal=mpf.make_addplot(m['MACDs_12_26_9'],color='red',panel=1)
+histogram=mpf.make_addplot(m['MACDh_12_26_9'],color='green',type='bar',panel=1)
+mpf.plot(data,type='candle',  style='yahoo',addplot=[macd,signal,histogram])
