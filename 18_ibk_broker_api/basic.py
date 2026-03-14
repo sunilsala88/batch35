@@ -44,3 +44,5 @@
 
 # ib.disconnect()
 
+
+#https://interactivebrokers.github.io/tws-api/basic_orders.html
