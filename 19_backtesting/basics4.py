@@ -40,4 +40,11 @@ class firstsma(Strategy):
 bt=Backtest(data,firstsma,cash=1000,trade_on_close=True,commission=0.001)
 output=bt.run()
 print(output)   
+# bt.plot()
+
+stats = bt.optimize(s1=[5,10,15,20,25,30,35,40],
+                    s2=range(50,100,5),
+                    maximize='Return [%]')
+print(stats)
+print(stats['_strategy'])
 bt.plot()
