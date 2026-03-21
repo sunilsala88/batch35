@@ -18,6 +18,7 @@ class firstsma(Strategy):
         self.sma1=self.I(get_sma,closing_price,self.s1)
         self.sma2=self.I(get_sma,closing_price,self.s2)
     def next(self):
+        closeing_price=self.data.Close[-1]
         s1=self.sma1[-1]
         s2=self.sma2[-1]
         ps1=self.sma1[-2]
@@ -26,14 +27,14 @@ class firstsma(Strategy):
         if s1>s2 and ps1<=ps2:
             if self.position.is_short :
                 self.position.close()
-                self.buy()
+                self.buy(sl=closeing_price*0.95,tp=closeing_price*1.05)
             elif not self.position:
-                self.buy()
+                self.buy(sl=closeing_price*0.95,tp=closeing_price*1.05)
 
         elif s1<s2 and ps1>=ps2:
             if self.position.is_long:
                 self.position.close()
-                self.sell()
+                self.sell(sl=closeing_price*1.05)
 
 
 bt=Backtest(data,firstsma,cash=1000,trade_on_close=True,commission=0.001)
