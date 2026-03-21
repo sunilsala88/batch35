@@ -18,26 +18,25 @@ class firstsma(Strategy):
         self.sma1=self.I(get_sma,closing_price,self.s1)
         self.sma2=self.I(get_sma,closing_price,self.s2)
     def next(self):
-        # print(self.data.df)
-        t1=self.data.df.index[-1]
-        c1=self.data.Close[-1]
         s1=self.sma1[-1]
         s2=self.sma2[-1]
         ps1=self.sma1[-2]
         ps2=self.sma2[-2]
-        print(t1,c1,s1,s2)
 
         if s1>s2 and ps1<=ps2:
-            self.buy()
+            if self.position.is_short :
+                self.position.close()
+                self.buy()
+            elif not self.position:
+                self.buy()
+
         elif s1<s2 and ps1>=ps2:
-            self.position.close()
+            if self.position.is_long:
+                self.position.close()
+                self.sell()
 
 
-
-
-sma1=get_sma(data['Close'],5)
-print(sma1)
-bt=Backtest(data,firstsma)
+bt=Backtest(data,firstsma,cash=1000,trade_on_close=True,commission=0.001)
 output=bt.run()
 print(output)   
 bt.plot()
