@@ -19,7 +19,6 @@ def get_supertrend(high,low,close,l):
 
 def get_supertrend_value(high,low,close,l):
     d=ta.supertrend(high,low,close,l)
-    print(d)
     return d[f'SUPERT_{l}_3.0']
 
 class super_ema(Strategy):
@@ -39,15 +38,15 @@ class super_ema(Strategy):
         if self.supertrend[-1]>0 and closing_price>self.ema1[-1]:
             if self.position.is_short :
                 self.position.close()
-                self.buy()
+                self.buy(sl=closing_price*0.95)
             elif not self.position:
-                self.buy()
+                self.buy(sl=closing_price*0.95)
         elif self.supertrend[-1]<0 and closing_price<self.ema1[-1]:
             if self.position.is_long:
                 self.position.close()
-                self.sell()
+                self.sell(sl=closing_price*1.05)
             elif not self.position:
-                self.sell()
+                self.sell(sl=closing_price*1.05)
 
 # e1=get_ema(data['Close'],20)
 # s1=get_supertrend_value(data['High'], data['Low'], data['Close'],20)
@@ -55,7 +54,16 @@ class super_ema(Strategy):
 # print(s1.tail(20))
 
 
-bt=Backtest(data,super_ema,cash=500_000,trade_on_close=True,commission=0.001)
+bt=Backtest(data,super_ema,cash=500_000,trade_on_close=True,finalize_trades=True)
 output=bt.run()
 print(output)   
+# bt.plot()
+
+stats = bt.optimize(e1=range(5,50,3),
+                    s1=range(10,70,5),
+                    maximize='Return [%]')
+# print(stats)
+print(stats['_strategy'])
+
+stats['_trades'].to_csv('trades.csv')
 bt.plot()
