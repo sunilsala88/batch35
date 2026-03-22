@@ -34,7 +34,20 @@ class super_ema(Strategy):
         self.supertrend=self.I(get_supertrend,high_price,low_price,closing_price,self.s1)
         self.supertrend_value=self.I(get_supertrend_value,high_price,low_price,closing_price,self.s1)
     def next(self):
-        pass
+        closing_price=self.data.Close[-1]
+
+        if self.supertrend[-1]>0 and closing_price>self.ema1[-1]:
+            if self.position.is_short :
+                self.position.close()
+                self.buy()
+            elif not self.position:
+                self.buy()
+        elif self.supertrend[-1]<0 and closing_price<self.ema1[-1]:
+            if self.position.is_long:
+                self.position.close()
+                self.sell()
+            elif not self.position:
+                self.sell()
 
 # e1=get_ema(data['Close'],20)
 # s1=get_supertrend_value(data['High'], data['Low'], data['Close'],20)
@@ -42,7 +55,7 @@ class super_ema(Strategy):
 # print(s1.tail(20))
 
 
-bt=Backtest(data,super_ema,cash=200_000,trade_on_close=True,commission=0.001)
+bt=Backtest(data,super_ema,cash=500_000,trade_on_close=True,commission=0.001)
 output=bt.run()
 print(output)   
 bt.plot()
