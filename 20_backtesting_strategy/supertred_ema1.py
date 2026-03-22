@@ -1,0 +1,48 @@
+
+
+import yfinance as yf
+data=yf.download('BTC-USD', period='2y', interval='1d',multi_level_index=False)
+print(data)
+
+from backtesting import Backtest, Strategy
+
+import pandas_ta as ta
+
+def get_ema(close,period):
+    d=ta.ema(close,period=period)
+    return (d)
+
+
+def get_supertrend(high,low,close,l):
+    d=ta.supertrend(high,low,close,l)
+    return d[f'SUPERTd_{l}_3.0']
+
+def get_supertrend_value(high,low,close,l):
+    d=ta.supertrend(high,low,close,l)
+    print(d)
+    return d[f'SUPERT_{l}_3.0']
+
+class super_ema(Strategy):
+    e1=20
+    s1=10
+
+    def init(self):
+        closing_price=self.data.Close.s
+        high_price=self.data.High.s
+        low_price=self.data.Low.s
+        self.ema1=self.I(get_ema,closing_price,self.e1)
+        self.supertrend=self.I(get_supertrend,high_price,low_price,closing_price,self.s1)
+        self.supertrend_value=self.I(get_supertrend_value,high_price,low_price,closing_price,self.s1)
+    def next(self):
+        pass
+
+# e1=get_ema(data['Close'],20)
+# s1=get_supertrend_value(data['High'], data['Low'], data['Close'],20)
+# print(e1)
+# print(s1.tail(20))
+
+
+bt=Backtest(data,super_ema,cash=200_000,trade_on_close=True,commission=0.001)
+output=bt.run()
+print(output)   
+bt.plot()
