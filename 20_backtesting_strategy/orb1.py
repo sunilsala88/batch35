@@ -57,7 +57,7 @@ class ORBStrategy(Strategy):
 
 
 import yfinance as yf
-data=yf.download('TSLA',period='7d',interval='5m',multi_level_index=False,ignore_tz=True)
+data=yf.download('MSFT',period='7d',interval='5m',multi_level_index=False,ignore_tz=True)
 print(data)
 
 # data.index = data.index.tz_convert('US/Eastern')
@@ -93,10 +93,11 @@ bt.plot()
 # bt.plot()
 
 # def fetch_data(symbol):
-#     data = yf.download(symbol, period='7d', interval='5m')
-#     data.reset_index(inplace=True)
-#     data['Datetime']=data['Datetime'].dt.tz_localize(None)
-#     data.set_index('Datetime',inplace=True)
+#     data = yf.download(symbol, period='7d', interval='5m', multi_level_index=False, ignore_tz=True)
+
+#     # data.reset_index(inplace=True)
+#     # data['Datetime']=data['Datetime'].dt.tz_localize(None)
+#     # data.set_index('Datetime',inplace=True)
 #     return data
 
 # stocks=['AAPL','GOOG','AMZN','MSFT']
@@ -104,8 +105,8 @@ bt.plot()
 # for stock in stocks:
 #     data = fetch_data(stock)
 #     print(data)
-#     data['Date']=data['Date'].dt.tz_localize(None)
-#     data.set_index('Date',inplace=True)
+#     # data['Date']=data['Date'].dt.tz_localize(None)
+#     # data.set_index('Date',inplace=True)
 #     bt = Backtest(data, ORBStrategy, cash=100_000, commission=.002)
 #     stats = bt.run()
 #     results[stock] = stats
