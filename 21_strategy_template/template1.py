@@ -91,39 +91,6 @@ def trade_buy_crypto(ticker_name):
     pass
 
 
-    #market order
-    # # ord=MarketOrder(action='BUY',totalQuantity=1)
-    # if check_market_order_placed(ticker_name):
-    #     ord=Order(orderId=ib.client.getReqId(),orderType='MKT',totalQuantity=quantity_,action='BUY',account=account_no,tif=ord_validity)
-    #     trade=ib.placeOrder(contract,ord)
-    #     ib.sleep(1)
-    #     logging.info(trade)
-    #     logging.info('Placed market buy order')
-  
-    # else:
-    #     logging.info('market order already placed')
-    #     print('market order already placed')
-    #     return 0        
-
-
-
-    # #stop order
-    # order = Order()
-    # order.orderId = ib.client.getReqId()
-    # order.action = 'SELL'
-    # order.orderType = "STP"
-    # order.totalQuantity = quantity_
-    # order.auxPrice = int(stop_price)
-    # order.tif = ord_validity
-    # order.account=account_no
-
-
-    # trade=ib.placeOrder(contract, order)
-    # ib.sleep(1)
-    # logging.info(trade)
-    # logging.info("placed stop order")
-
-
 def strategy_condition(df,ticker):
     
     buy_condition=df['ema'].iloc[-1]>df['sma'].iloc[-1] and df['ema'].iloc[-2]<df['sma'].iloc[-2]
@@ -178,44 +145,6 @@ def main_strategy_code():
             if position_status==1:
                 logger.info('we have current ticker in position and is long')
                 print('we have current ticker in position and is long')
-
-            
-
-            # if pos_df[pos_df["name"]==ticker]["position"].values[0] > 0  :
-            #     logging.info('we have current ticker in position and is long')
-            #     print('we have current ticker in position and is long')
-            #     sell_condition=hist_df_hourly['super'].iloc[-1]<0 and hist_df_daily['ema'].iloc[-1]>hist_df_hourly['close'].iloc[-1]
-            #     # sell_condition=True
-            #     # current_balance=int(float([v for v in ib.accountValues(account=account_no) if v.tag == 'AvailableFunds' ][0].value))
-            #     # if current_balance>hist_df.close.iloc[-1]:
-            #     if sell_condition:
-            #                 hourly_closing_price=hist_df_hourly['close'].iloc[0]
-            #                 atr_value=hist_df_daily['atr'].iloc[-1]
-            #                 print('sell condition satisfied')
-            #                 logging.info('sell condition satisfied')
-            #                 close_ticker_open_orders(ticker)
-            #                 close_ticker_postion(ticker)
-            #                 trade_sell_stocks(ticker,hourly_closing_price+atr_value)
-                        
-                        
-            # elif pos_df[pos_df["name"]==ticker]["position"].values[0] < 0 :
-            #     print('we have current ticker in position and is short')
-            #     logging.info('we have current ticker in position and is short')
-            #     hourly_closing_price=hist_df_hourly['close'].iloc[0]
-            #     atr_value=hist_df_daily['atr'].iloc[-1]
-            #     buy_condition=hist_df_hourly['super'].iloc[-1]>0 and hist_df_daily['ema'].iloc[-1]<hist_df_hourly['close'].iloc[-1]
-            #     # buy_condition=True
-            #     # current_balance=int(float([v for v in ib.accountValues(account=account_no) if v.tag == 'AvailableFunds' ][0].value))
-            #     # if current_balance>hist_df.close.iloc[-1]:
-         
-            #     if buy_condition:
-            #                 print('buy condiiton satisfied')
-            #                 logging.info('buy condiiton satisfied')
-            #                 close_ticker_open_orders(ticker)
-            #                 close_ticker_postion(ticker)
-                        
-            #                 trade_buy_stocks(ticker,hourly_closing_price-atr_value)
-
 
 
 
