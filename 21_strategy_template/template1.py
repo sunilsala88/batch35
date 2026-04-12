@@ -3,6 +3,7 @@ from  ib_async import *
 import pendulum as dt
 import time
 import logging
+import pandas as pd
 time_zone='America/New_York'
 ct= dt.now(time_zone)
 print(ct)
@@ -87,18 +88,38 @@ def get_info_about_position(pos,ticker_name):
                  return 0
      return 0
 
-def trade_buy_crypto(ticker_name):
-    pass
 
+def check_market_order_placed(name):
+    """Returns True if an open market order exists for the given ticker, False otherwise."""
+    open_orders = ib.openOrders()
+    for order in open_orders:
+        if order.contract.symbol == name and order.orderType == 'MKT':
+            return True
+    return False
+
+
+def trade_buy_crypto(ticker_name):
+    if check_market_order_placed(ticker_name):
+        logger.info(f'market order already placed for {ticker_name} so skipping placing new order')
+        print(f'market order already placed for {ticker_name} so skipping placing new order')
+        return 0
+    logger.info(f'placing buy order for {ticker_name}')
+    c1=contract_objects.get(ticker_name)
+    order = MarketOrder('BUY', quantity, account=account_no)
+    trade = ib.placeOrder(c1, order)
+    logger.info(f'buy order placed for {ticker_name}')
+    return trade
 
 def strategy_condition(df,ticker):
     
     buy_condition=df['ema'].iloc[-1]>df['sma'].iloc[-1] and df['ema'].iloc[-2]<df['sma'].iloc[-2]
+    buy_condition=True
     logger.info(f'checking strategy condition for {ticker}')
     if buy_condition:
         logger.info(f'buy condition satisfied for {ticker}')
         print(f'buy condition satisfied for {ticker}')
         # place buy order here
+        trade_buy_crypto(ticker)
 
 
 def main_strategy_code():
