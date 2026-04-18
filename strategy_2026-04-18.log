@@ -1,0 +1,241 @@
+2026-04-18 18:32:42 +0530 - Current time: 2026-04-18 18:32:42.873592+05:30 - Strategy started
+2026-04-18 18:32:43 +0530 - Error 200, reqId 277: No security definition has been found for the request, contract: Crypto(symbol='RELIANCE', exchange='NSE', currency='INR')
+2026-04-18 18:32:43 +0530 - Unknown contract: Crypto(symbol='RELIANCE', exchange='NSE', currency='INR')
+2026-04-18 18:32:43 +0530 - Error 200, reqId 278: No security definition has been found for the request, contract: Crypto(symbol='AXISBANK', exchange='NSE', currency='INR')
+2026-04-18 18:32:43 +0530 - Unknown contract: Crypto(symbol='AXISBANK', exchange='NSE', currency='INR')
+2026-04-18 18:32:43 +0530 - Error 200, reqId 279: No security definition has been found for the request, contract: Crypto(symbol='ASHOKA', exchange='NSE', currency='INR')
+2026-04-18 18:32:43 +0530 - Unknown contract: Crypto(symbol='ASHOKA', exchange='NSE', currency='INR')
+2026-04-18 18:32:43 +0530 - Error 200, reqId 280: No security definition has been found for the request, contract: Crypto(symbol='KOTAKBANK', exchange='NSE', currency='INR')
+2026-04-18 18:32:43 +0530 - Unknown contract: Crypto(symbol='KOTAKBANK', exchange='NSE', currency='INR')
+2026-04-18 18:33:01 +0530 - Current time: 2026-04-18 18:33:01.757255+05:30 - Strategy started
+2026-04-18 19:01:33 +0530 - Current time: 2026-04-18 19:01:33.301189+05:30 - Strategy started
+2026-04-18 19:01:34 +0530 - Strategy started
+2026-04-18 19:01:34 +0530 - Checking if start time has been reached
+2026-04-18 19:02:00 +0530 - Starting the main code
+2026-04-18 19:02:01 +0530 - inside main strategy ['RELIANCE', 'AXISBANK', 'ASHOKA', 'KOTAKBANK']
+2026-04-18 19:02:01 +0530 - fetching historical data
+2026-04-18 19:02:02 +0530 - calculated indicators
+2026-04-18 19:02:02 +0530 - Checking condition
+2026-04-18 19:02:02 +0530 - we dont have any position
+2026-04-18 19:02:02 +0530 - checking strategy condition for RELIANCE
+2026-04-18 19:02:02 +0530 - fetching historical data
+2026-04-18 19:02:03 +0530 - calculated indicators
+2026-04-18 19:02:03 +0530 - Checking condition
+2026-04-18 19:02:03 +0530 - we dont have any position
+2026-04-18 19:02:03 +0530 - checking strategy condition for AXISBANK
+2026-04-18 19:02:03 +0530 - fetching historical data
+2026-04-18 19:02:04 +0530 - calculated indicators
+2026-04-18 19:02:04 +0530 - Checking condition
+2026-04-18 19:02:04 +0530 - we dont have any position
+2026-04-18 19:02:04 +0530 - checking strategy condition for ASHOKA
+2026-04-18 19:02:04 +0530 - fetching historical data
+2026-04-18 19:02:04 +0530 - calculated indicators
+2026-04-18 19:02:04 +0530 - Checking condition
+2026-04-18 19:02:04 +0530 - we dont have any position
+2026-04-18 19:02:04 +0530 - checking strategy condition for KOTAKBANK
+2026-04-18 19:03:01 +0530 - inside main strategy ['RELIANCE', 'AXISBANK', 'ASHOKA', 'KOTAKBANK']
+2026-04-18 19:03:01 +0530 - fetching historical data
+2026-04-18 19:03:02 +0530 - calculated indicators
+2026-04-18 19:03:02 +0530 - Checking condition
+2026-04-18 19:03:02 +0530 - we dont have any position
+2026-04-18 19:03:02 +0530 - checking strategy condition for RELIANCE
+2026-04-18 19:03:02 +0530 - fetching historical data
+2026-04-18 19:03:03 +0530 - calculated indicators
+2026-04-18 19:03:03 +0530 - Checking condition
+2026-04-18 19:03:03 +0530 - we dont have any position
+2026-04-18 19:03:03 +0530 - checking strategy condition for AXISBANK
+2026-04-18 19:03:03 +0530 - fetching historical data
+2026-04-18 19:03:03 +0530 - calculated indicators
+2026-04-18 19:03:03 +0530 - Checking condition
+2026-04-18 19:03:03 +0530 - we dont have any position
+2026-04-18 19:03:03 +0530 - checking strategy condition for ASHOKA
+2026-04-18 19:03:03 +0530 - fetching historical data
+2026-04-18 19:03:04 +0530 - calculated indicators
+2026-04-18 19:03:04 +0530 - Checking condition
+2026-04-18 19:03:04 +0530 - we dont have any position
+2026-04-18 19:03:04 +0530 - checking strategy condition for KOTAKBANK
+2026-04-18 19:03:19 +0530 - Current time: 2026-04-18 19:03:19.177479+05:30 - Strategy started
+2026-04-18 19:03:19 +0530 - Strategy started
+2026-04-18 19:03:19 +0530 - Checking if start time has been reached
+2026-04-18 19:03:19 +0530 - Starting the main code
+2026-04-18 19:04:01 +0530 - inside main strategy ['RELIANCE', 'AXISBANK', 'ASHOKA', 'KOTAKBANK']
+2026-04-18 19:04:01 +0530 - fetching historical data
+2026-04-18 19:04:02 +0530 - calculated indicators
+2026-04-18 19:04:02 +0530 - Checking condition
+2026-04-18 19:04:02 +0530 - we dont have any position
+2026-04-18 19:04:02 +0530 - checking strategy condition for RELIANCE
+2026-04-18 19:04:02 +0530 - no condition satisfied for RELIANCE
+2026-04-18 19:04:02 +0530 - fetching historical data
+2026-04-18 19:04:02 +0530 - calculated indicators
+2026-04-18 19:04:02 +0530 - Checking condition
+2026-04-18 19:04:02 +0530 - we dont have any position
+2026-04-18 19:04:02 +0530 - checking strategy condition for AXISBANK
+2026-04-18 19:04:02 +0530 - no condition satisfied for AXISBANK
+2026-04-18 19:04:02 +0530 - fetching historical data
+2026-04-18 19:04:03 +0530 - calculated indicators
+2026-04-18 19:04:03 +0530 - Checking condition
+2026-04-18 19:04:03 +0530 - we dont have any position
+2026-04-18 19:04:03 +0530 - checking strategy condition for ASHOKA
+2026-04-18 19:04:03 +0530 - no condition satisfied for ASHOKA
+2026-04-18 19:04:03 +0530 - fetching historical data
+2026-04-18 19:04:03 +0530 - Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.uscrypto
+2026-04-18 19:04:03 +0530 - Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.uscrypto
+2026-04-18 19:04:03 +0530 - calculated indicators
+2026-04-18 19:04:03 +0530 - Checking condition
+2026-04-18 19:04:03 +0530 - we dont have any position
+2026-04-18 19:04:03 +0530 - checking strategy condition for KOTAKBANK
+2026-04-18 19:04:03 +0530 - no condition satisfied for KOTAKBANK
+2026-04-18 19:04:47 +0530 - Current time: 2026-04-18 19:04:47.800987+05:30 - Strategy started
+2026-04-18 19:04:48 +0530 - Strategy started
+2026-04-18 19:04:48 +0530 - Checking if start time has been reached
+2026-04-18 19:04:48 +0530 - Starting the main code
+2026-04-18 19:05:01 +0530 - inside main strategy ['RELIANCE', 'AXISBANK', 'ASHOKA', 'KOTAKBANK']
+2026-04-18 19:05:01 +0530 - fetching historical data
+2026-04-18 19:05:02 +0530 - calculated indicators
+2026-04-18 19:05:02 +0530 - Checking condition
+2026-04-18 19:05:02 +0530 - we dont have any position
+2026-04-18 19:05:02 +0530 - checking strategy condition for RELIANCE
+2026-04-18 19:05:02 +0530 - buy condition satisfied for RELIANCE
+2026-04-18 19:05:02 +0530 - placeOrder: New order Trade(contract=Stock(conId=44652000, symbol='RELIANCE', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='RELIANCE', tradingClass='RELIANCE'), order=Order(orderId=282, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=282, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 2, 88857, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:05:02 +0530 - IBKR API validation warning: Trade(contract=Stock(conId=44652000, symbol='RELIANCE', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='RELIANCE', tradingClass='RELIANCE'), order=Order(orderId=282, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=282, status='ValidationError', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 2, 88857, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 2, 339092, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 282: Order Message: BUY 1 RELIANCE NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399)], advancedError='')
+2026-04-18 19:05:02 +0530 - orderStatus: Trade(contract=Stock(conId=44652000, symbol='RELIANCE', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='RELIANCE', tradingClass='RELIANCE'), order=Order(orderId=282, clientId=18, permId=1548976102, action='BUY', totalQuantity=1.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=282, status='PreSubmitted', filled=0.0, remaining=1.0, avgFillPrice=0.0, permId=1548976102, parentId=0, lastFillPrice=0.0, clientId=18, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 2, 88857, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 2, 339092, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 282: Order Message: BUY 1 RELIANCE NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 2, 351088, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)], advancedError='')
+2026-04-18 19:05:17 +0530 - BUY market order not filled within timeout (status=PreSubmitted)
+2026-04-18 19:05:17 +0530 - fetching historical data
+2026-04-18 19:05:17 +0530 - calculated indicators
+2026-04-18 19:05:17 +0530 - Checking condition
+2026-04-18 19:05:17 +0530 - we dont have any position
+2026-04-18 19:05:17 +0530 - checking strategy condition for AXISBANK
+2026-04-18 19:05:17 +0530 - buy condition satisfied for AXISBANK
+2026-04-18 19:05:17 +0530 - placeOrder: New order Trade(contract=Stock(conId=162089869, symbol='AXISBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='AXISBANK', tradingClass='AXISBANK'), order=Order(orderId=284, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=284, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 17, 596765, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:05:17 +0530 - IBKR API validation warning: Trade(contract=Stock(conId=162089869, symbol='AXISBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='AXISBANK', tradingClass='AXISBANK'), order=Order(orderId=284, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=284, status='ValidationError', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 17, 596765, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 17, 785116, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 284: Order Message: BUY 1 AXISBANK NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399)], advancedError='')
+2026-04-18 19:05:17 +0530 - orderStatus: Trade(contract=Stock(conId=162089869, symbol='AXISBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='AXISBANK', tradingClass='AXISBANK'), order=Order(orderId=284, clientId=18, permId=1548976103, action='BUY', totalQuantity=1.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=284, status='PreSubmitted', filled=0.0, remaining=1.0, avgFillPrice=0.0, permId=1548976103, parentId=0, lastFillPrice=0.0, clientId=18, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 17, 596765, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 17, 785116, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 284: Order Message: BUY 1 AXISBANK NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 17, 786646, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)], advancedError='')
+2026-04-18 19:05:32 +0530 - BUY market order not filled within timeout (status=PreSubmitted)
+2026-04-18 19:05:32 +0530 - fetching historical data
+2026-04-18 19:05:33 +0530 - calculated indicators
+2026-04-18 19:05:33 +0530 - Checking condition
+2026-04-18 19:05:33 +0530 - we dont have any position
+2026-04-18 19:05:33 +0530 - checking strategy condition for ASHOKA
+2026-04-18 19:05:33 +0530 - buy condition satisfied for ASHOKA
+2026-04-18 19:05:33 +0530 - placeOrder: New order Trade(contract=Stock(conId=130658038, symbol='ASHOKA', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='ASHOKA', tradingClass='ASHOKA'), order=Order(orderId=286, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=286, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 33, 113569, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:05:33 +0530 - Error 201, reqId 286: Order rejected - reason:Security is under Surveillance Measure - High low price variation was greater than 100% in previous 6 months.<br><br><br>Would you like to continue?.
+2026-04-18 19:05:33 +0530 - Canceled order: Trade(contract=Stock(conId=130658038, symbol='ASHOKA', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='ASHOKA', tradingClass='ASHOKA'), order=Order(orderId=286, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=286, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 33, 113569, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 33, 249194, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 201, reqId 286: Order rejected - reason:Security is under Surveillance Measure - High low price variation was greater than 100% in previous 6 months.<br><br><br>Would you like to continue?.', errorCode=201)], advancedError='{"rejects":[{"buttons":[{"options":[{"fixstr":"8229=SURVEILLANCE","text":"Yes, transmit the order."}],"style":"chk"}],"id":2,"text":"Security is under Surveillance Measure &ndash; High low price variation was greater than 100% in previous 6 months. <br><br>Would you like to continue?","textsep":"124"}],"version":"1.0"}')
+2026-04-18 19:05:34 +0530 - BUY market order not filled within timeout (status=Cancelled)
+2026-04-18 19:05:34 +0530 - fetching historical data
+2026-04-18 19:05:34 +0530 - calculated indicators
+2026-04-18 19:05:34 +0530 - Checking condition
+2026-04-18 19:05:34 +0530 - we dont have any position
+2026-04-18 19:05:34 +0530 - checking strategy condition for KOTAKBANK
+2026-04-18 19:05:34 +0530 - buy condition satisfied for KOTAKBANK
+2026-04-18 19:05:34 +0530 - placeOrder: New order Trade(contract=Stock(conId=844598552, symbol='KOTAKBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='KOTAKBANK', tradingClass='KOTAKBANK'), order=Order(orderId=288, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=288, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 34, 655266, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:05:34 +0530 - IBKR API validation warning: Trade(contract=Stock(conId=844598552, symbol='KOTAKBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='KOTAKBANK', tradingClass='KOTAKBANK'), order=Order(orderId=288, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=288, status='ValidationError', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 34, 655266, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 34, 847289, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 288: Order Message: BUY 1 KOTAKBANK NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399)], advancedError='')
+2026-04-18 19:05:34 +0530 - orderStatus: Trade(contract=Stock(conId=844598552, symbol='KOTAKBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='KOTAKBANK', tradingClass='KOTAKBANK'), order=Order(orderId=288, clientId=18, permId=1548976105, action='BUY', totalQuantity=1.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=288, status='PreSubmitted', filled=0.0, remaining=1.0, avgFillPrice=0.0, permId=1548976105, parentId=0, lastFillPrice=0.0, clientId=18, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 34, 655266, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 34, 847289, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 288: Order Message: BUY 1 KOTAKBANK NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 35, 34, 847903, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)], advancedError='')
+2026-04-18 19:05:49 +0530 - BUY market order not filled within timeout (status=PreSubmitted)
+2026-04-18 19:06:01 +0530 - inside main strategy ['RELIANCE', 'AXISBANK', 'ASHOKA', 'KOTAKBANK']
+2026-04-18 19:06:01 +0530 - fetching historical data
+2026-04-18 19:06:02 +0530 - calculated indicators
+2026-04-18 19:06:02 +0530 - Checking condition
+2026-04-18 19:06:02 +0530 - we dont have any position
+2026-04-18 19:06:02 +0530 - checking strategy condition for RELIANCE
+2026-04-18 19:06:02 +0530 - buy condition satisfied for RELIANCE
+2026-04-18 19:06:02 +0530 - market order already placed
+2026-04-18 19:06:02 +0530 - fetching historical data
+2026-04-18 19:06:02 +0530 - calculated indicators
+2026-04-18 19:06:02 +0530 - Checking condition
+2026-04-18 19:06:02 +0530 - we dont have any position
+2026-04-18 19:06:02 +0530 - checking strategy condition for AXISBANK
+2026-04-18 19:06:02 +0530 - buy condition satisfied for AXISBANK
+2026-04-18 19:06:02 +0530 - market order already placed
+2026-04-18 19:06:02 +0530 - fetching historical data
+2026-04-18 19:06:03 +0530 - calculated indicators
+2026-04-18 19:06:03 +0530 - Checking condition
+2026-04-18 19:06:03 +0530 - we dont have any position
+2026-04-18 19:06:03 +0530 - checking strategy condition for ASHOKA
+2026-04-18 19:06:03 +0530 - buy condition satisfied for ASHOKA
+2026-04-18 19:06:03 +0530 - placeOrder: New order Trade(contract=Stock(conId=130658038, symbol='ASHOKA', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='ASHOKA', tradingClass='ASHOKA'), order=Order(orderId=292, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=292, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 36, 3, 275118, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:06:03 +0530 - Error 201, reqId 292: Order rejected - reason:Security is under Surveillance Measure - High low price variation was greater than 100% in previous 6 months.<br><br><br>Would you like to continue?.
+2026-04-18 19:06:03 +0530 - Canceled order: Trade(contract=Stock(conId=130658038, symbol='ASHOKA', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='ASHOKA', tradingClass='ASHOKA'), order=Order(orderId=292, clientId=18, action='BUY', totalQuantity=1, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=292, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 36, 3, 275118, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 36, 3, 405911, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 201, reqId 292: Order rejected - reason:Security is under Surveillance Measure - High low price variation was greater than 100% in previous 6 months.<br><br><br>Would you like to continue?.', errorCode=201)], advancedError='{"rejects":[{"buttons":[{"options":[{"fixstr":"8229=SURVEILLANCE","text":"Yes, transmit the order."}],"style":"chk"}],"id":5,"text":"Security is under Surveillance Measure &ndash; High low price variation was greater than 100% in previous 6 months. <br><br>Would you like to continue?","textsep":"124"}],"version":"1.0"}')
+2026-04-18 19:06:04 +0530 - BUY market order not filled within timeout (status=Cancelled)
+2026-04-18 19:06:04 +0530 - fetching historical data
+2026-04-18 19:06:04 +0530 - calculated indicators
+2026-04-18 19:06:04 +0530 - Checking condition
+2026-04-18 19:06:04 +0530 - we dont have any position
+2026-04-18 19:06:04 +0530 - checking strategy condition for KOTAKBANK
+2026-04-18 19:06:04 +0530 - buy condition satisfied for KOTAKBANK
+2026-04-18 19:06:04 +0530 - market order already placed
+2026-04-18 19:06:55 +0530 - Current time: 2026-04-18 19:06:55.233077+05:30 - Strategy started
+2026-04-18 19:06:55 +0530 - Strategy started
+2026-04-18 19:06:55 +0530 - Checking if start time has been reached
+2026-04-18 19:06:55 +0530 - Starting the main code
+2026-04-18 19:07:01 +0530 - inside main strategy ['RELIANCE', 'AXISBANK', 'ASHOKA', 'KOTAKBANK']
+2026-04-18 19:07:01 +0530 - fetching historical data
+2026-04-18 19:07:02 +0530 - calculated indicators
+2026-04-18 19:07:02 +0530 - Checking condition
+2026-04-18 19:07:02 +0530 - we dont have any position
+2026-04-18 19:07:02 +0530 - checking strategy condition for RELIANCE
+2026-04-18 19:07:02 +0530 - buy condition satisfied for RELIANCE
+2026-04-18 19:07:02 +0530 - placeOrder: New order Trade(contract=Stock(conId=44652000, symbol='RELIANCE', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='RELIANCE', tradingClass='RELIANCE'), order=Order(orderId=300, clientId=18, action='BUY', totalQuantity=683, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=300, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 2, 773325, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:07:02 +0530 - IBKR API validation warning: Trade(contract=Stock(conId=44652000, symbol='RELIANCE', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='RELIANCE', tradingClass='RELIANCE'), order=Order(orderId=300, clientId=18, action='BUY', totalQuantity=683, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=300, status='ValidationError', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 2, 773325, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 2, 945410, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 300: Order Message: BUY 683 RELIANCE NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399)], advancedError='')
+2026-04-18 19:07:02 +0530 - orderStatus: Trade(contract=Stock(conId=44652000, symbol='RELIANCE', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='RELIANCE', tradingClass='RELIANCE'), order=Order(orderId=300, clientId=18, permId=1548976108, action='BUY', totalQuantity=683.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=300, status='PreSubmitted', filled=0.0, remaining=683.0, avgFillPrice=0.0, permId=1548976108, parentId=0, lastFillPrice=0.0, clientId=18, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 2, 773325, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 2, 945410, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 300: Order Message: BUY 683 RELIANCE NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 2, 946662, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)], advancedError='')
+2026-04-18 19:07:17 +0530 - BUY market order not filled within timeout (status=PreSubmitted)
+2026-04-18 19:07:17 +0530 - fetching historical data
+2026-04-18 19:07:18 +0530 - calculated indicators
+2026-04-18 19:07:18 +0530 - Checking condition
+2026-04-18 19:07:18 +0530 - we dont have any position
+2026-04-18 19:07:18 +0530 - checking strategy condition for AXISBANK
+2026-04-18 19:07:18 +0530 - buy condition satisfied for AXISBANK
+2026-04-18 19:07:18 +0530 - placeOrder: New order Trade(contract=Stock(conId=162089869, symbol='AXISBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='AXISBANK', tradingClass='AXISBANK'), order=Order(orderId=302, clientId=18, action='BUY', totalQuantity=684, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=302, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 18, 204070, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:07:18 +0530 - IBKR API validation warning: Trade(contract=Stock(conId=162089869, symbol='AXISBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='AXISBANK', tradingClass='AXISBANK'), order=Order(orderId=302, clientId=18, action='BUY', totalQuantity=684, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=302, status='ValidationError', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 18, 204070, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 18, 373838, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 302: Order Message: BUY 684 AXISBANK NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399)], advancedError='')
+2026-04-18 19:07:18 +0530 - orderStatus: Trade(contract=Stock(conId=162089869, symbol='AXISBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='AXISBANK', tradingClass='AXISBANK'), order=Order(orderId=302, clientId=18, permId=1548976109, action='BUY', totalQuantity=684.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=302, status='PreSubmitted', filled=0.0, remaining=684.0, avgFillPrice=0.0, permId=1548976109, parentId=0, lastFillPrice=0.0, clientId=18, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 18, 204070, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 18, 373838, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 302: Order Message: BUY 684 AXISBANK NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 18, 374689, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)], advancedError='')
+2026-04-18 19:07:33 +0530 - BUY market order not filled within timeout (status=PreSubmitted)
+2026-04-18 19:07:33 +0530 - fetching historical data
+2026-04-18 19:07:33 +0530 - calculated indicators
+2026-04-18 19:07:33 +0530 - Checking condition
+2026-04-18 19:07:33 +0530 - we dont have any position
+2026-04-18 19:07:33 +0530 - checking strategy condition for ASHOKA
+2026-04-18 19:07:33 +0530 - buy condition satisfied for ASHOKA
+2026-04-18 19:07:33 +0530 - placeOrder: New order Trade(contract=Stock(conId=130658038, symbol='ASHOKA', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='ASHOKA', tradingClass='ASHOKA'), order=Order(orderId=304, clientId=18, action='BUY', totalQuantity=6715, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=304, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 33, 753594, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:07:33 +0530 - Error 201, reqId 304: Order rejected - reason:Security is under Surveillance Measure - High low price variation was greater than 100% in previous 6 months.<br><br><br>Would you like to continue?.
+2026-04-18 19:07:33 +0530 - Canceled order: Trade(contract=Stock(conId=130658038, symbol='ASHOKA', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='ASHOKA', tradingClass='ASHOKA'), order=Order(orderId=304, clientId=18, action='BUY', totalQuantity=6715, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=304, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 33, 753594, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 33, 871490, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 201, reqId 304: Order rejected - reason:Security is under Surveillance Measure - High low price variation was greater than 100% in previous 6 months.<br><br><br>Would you like to continue?.', errorCode=201)], advancedError='{"rejects":[{"buttons":[{"options":[{"fixstr":"8229=SURVEILLANCE","text":"Yes, transmit the order."}],"style":"chk"}],"id":8,"text":"Security is under Surveillance Measure &ndash; High low price variation was greater than 100% in previous 6 months. <br><br>Would you like to continue?","textsep":"124"}],"version":"1.0"}')
+2026-04-18 19:07:34 +0530 - BUY market order not filled within timeout (status=Cancelled)
+2026-04-18 19:07:34 +0530 - fetching historical data
+2026-04-18 19:07:35 +0530 - calculated indicators
+2026-04-18 19:07:35 +0530 - Checking condition
+2026-04-18 19:07:35 +0530 - we dont have any position
+2026-04-18 19:07:35 +0530 - checking strategy condition for KOTAKBANK
+2026-04-18 19:07:35 +0530 - buy condition satisfied for KOTAKBANK
+2026-04-18 19:07:35 +0530 - placeOrder: New order Trade(contract=Stock(conId=844598552, symbol='KOTAKBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='KOTAKBANK', tradingClass='KOTAKBANK'), order=Order(orderId=306, clientId=18, action='BUY', totalQuantity=2434, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=306, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 35, 364422, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:07:35 +0530 - IBKR API validation warning: Trade(contract=Stock(conId=844598552, symbol='KOTAKBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='KOTAKBANK', tradingClass='KOTAKBANK'), order=Order(orderId=306, clientId=18, action='BUY', totalQuantity=2434, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=306, status='ValidationError', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 35, 364422, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 35, 532361, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 306: Order Message: BUY 2,434 KOTAKBANK NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399)], advancedError='')
+2026-04-18 19:07:35 +0530 - orderStatus: Trade(contract=Stock(conId=844598552, symbol='KOTAKBANK', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='KOTAKBANK', tradingClass='KOTAKBANK'), order=Order(orderId=306, clientId=18, permId=1548976111, action='BUY', totalQuantity=2434.0, orderType='MKT', lmtPrice=0.0, auxPrice=0.0, tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=306, status='PreSubmitted', filled=0.0, remaining=2434.0, avgFillPrice=0.0, permId=1548976111, parentId=0, lastFillPrice=0.0, clientId=18, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 35, 364422, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 35, 532361, tzinfo=datetime.timezone.utc), status='ValidationError', message='Warning 399, reqId 306: Order Message: BUY 2,434 KOTAKBANK NSE Warning: Your order will not be placed at the exchange until 2026-04-20 09:15:00 Asia/Calcutta.', errorCode=399), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 37, 35, 532970, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)], advancedError='')
+2026-04-18 19:07:50 +0530 - BUY market order not filled within timeout (status=PreSubmitted)
+2026-04-18 19:08:01 +0530 - inside main strategy ['RELIANCE', 'AXISBANK', 'ASHOKA', 'KOTAKBANK']
+2026-04-18 19:08:01 +0530 - fetching historical data
+2026-04-18 19:08:01 +0530 - calculated indicators
+2026-04-18 19:08:02 +0530 - Checking condition
+2026-04-18 19:08:02 +0530 - we dont have any position
+2026-04-18 19:08:02 +0530 - checking strategy condition for RELIANCE
+2026-04-18 19:08:02 +0530 - buy condition satisfied for RELIANCE
+2026-04-18 19:08:02 +0530 - market order already placed
+2026-04-18 19:08:02 +0530 - fetching historical data
+2026-04-18 19:08:02 +0530 - calculated indicators
+2026-04-18 19:08:02 +0530 - Checking condition
+2026-04-18 19:08:02 +0530 - we dont have any position
+2026-04-18 19:08:02 +0530 - checking strategy condition for AXISBANK
+2026-04-18 19:08:02 +0530 - buy condition satisfied for AXISBANK
+2026-04-18 19:08:02 +0530 - market order already placed
+2026-04-18 19:08:02 +0530 - fetching historical data
+2026-04-18 19:08:03 +0530 - calculated indicators
+2026-04-18 19:08:03 +0530 - Checking condition
+2026-04-18 19:08:03 +0530 - we dont have any position
+2026-04-18 19:08:03 +0530 - checking strategy condition for ASHOKA
+2026-04-18 19:08:03 +0530 - buy condition satisfied for ASHOKA
+2026-04-18 19:08:03 +0530 - placeOrder: New order Trade(contract=Stock(conId=130658038, symbol='ASHOKA', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='ASHOKA', tradingClass='ASHOKA'), order=Order(orderId=310, clientId=18, action='BUY', totalQuantity=6715, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=310, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 38, 3, 124493, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2026-04-18 19:08:03 +0530 - Error 201, reqId 310: Order rejected - reason:Security is under Surveillance Measure - High low price variation was greater than 100% in previous 6 months.<br><br><br>Would you like to continue?.
+2026-04-18 19:08:03 +0530 - Canceled order: Trade(contract=Stock(conId=130658038, symbol='ASHOKA', exchange='NSE', primaryExchange='NSE', currency='INR', localSymbol='ASHOKA', tradingClass='ASHOKA'), order=Order(orderId=310, clientId=18, action='BUY', totalQuantity=6715, orderType='MKT', tif='DAY', account='DU6327991'), orderStatus=OrderStatus(orderId=310, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 38, 3, 124493, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2026, 4, 18, 13, 38, 3, 414849, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 201, reqId 310: Order rejected - reason:Security is under Surveillance Measure - High low price variation was greater than 100% in previous 6 months.<br><br><br>Would you like to continue?.', errorCode=201)], advancedError='{"rejects":[{"buttons":[{"options":[{"fixstr":"8229=SURVEILLANCE","text":"Yes, transmit the order."}],"style":"chk"}],"id":11,"text":"Security is under Surveillance Measure &ndash; High low price variation was greater than 100% in previous 6 months. <br><br>Would you like to continue?","textsep":"124"}],"version":"1.0"}')
+2026-04-18 19:08:04 +0530 - BUY market order not filled within timeout (status=Cancelled)
+2026-04-18 19:08:04 +0530 - fetching historical data
+2026-04-18 19:08:04 +0530 - calculated indicators
+2026-04-18 19:08:04 +0530 - Checking condition
+2026-04-18 19:08:04 +0530 - we dont have any position
+2026-04-18 19:08:04 +0530 - checking strategy condition for KOTAKBANK
+2026-04-18 19:08:04 +0530 - buy condition satisfied for KOTAKBANK
+2026-04-18 19:08:04 +0530 - market order already placed
