@@ -1,9 +1,6 @@
 
-import datetime
-
 from  ib_async import *
 import pendulum as dt
-import time
 import logging
 import pandas as pd
 import threading
@@ -51,10 +48,9 @@ exchange='NSE'
 currency='INR'
 account_no='DU6327991'
 ord_validity='DAY'
-quantity_=1
 
-start_hour,start_min=19,2
-end_hour,end_min=19,15
+start_hour,start_min=9,25
+end_hour,end_min=15,15
 
 
 contract_objects={}
@@ -67,7 +63,7 @@ print(contract_objects)
 
 
 _order_lock = threading.Lock()
-last_run_minute = -1
+last_run_minute = (-1, -1)  # (day, minute)
 
 try:
     order_filled_dataframe=pd.read_csv('order_filled_list.csv')
@@ -94,7 +90,7 @@ def order_open_handler(order):
             price=order.orderStatus.avgFillPrice
             logger.info(f'ORDER FILLED | {name} | {action} | price={price}')
             a=[name, str(price), action]
-            fill_time = order.fills[0].execution.time if order.fills else dt.now(time_zone).isoformat()
+            fill_time = dt.instance(order.fills[0].execution.time).in_timezone(time_zone).isoformat() if order.fills else dt.now(time_zone).isoformat()
             with _order_lock:
                 order_filled_dataframe.loc[fill_time] = a
                 order_filled_dataframe.to_csv('order_filled_list.csv')
@@ -132,14 +128,14 @@ def close_ticker_position(name):
         trade=None
         if quant>0:
             try:
-                ord=Order(orderId=ib.client.getReqId(),orderType='MKT',totalQuantity=abs(quant),action='SELL',account=account_no,tif=ord_validity)
+                ord=Order(orderType='MKT',totalQuantity=int(abs(quant)),action='SELL',account=account_no,tif=ord_validity)
                 trade=ib.placeOrder(cont,ord)
                 logger.info(f'Close SELL order placed | {name} | qty={abs(quant)}')
             except Exception:
                 logger.exception(f'Failed to place SELL close order for {name}')
         elif quant<0:
             try:
-                ord=Order(orderId=ib.client.getReqId(),orderType='MKT',totalQuantity=abs(quant),action='BUY',account=account_no,tif=ord_validity)
+                ord=Order(orderType='MKT',totalQuantity=int(abs(quant)),action='BUY',account=account_no,tif=ord_validity)
                 trade=ib.placeOrder(cont,ord)
                 logger.info(f'Close BUY order placed | {name} | qty={abs(quant)}')
             except Exception:
@@ -162,7 +158,7 @@ def get_historical_data(ticker_contract,bar_size,duration):
     try:
         bars = ib.reqHistoricalData(
         ticker_contract, endDateTime='', durationStr=duration,
-        barSizeSetting=bar_size, whatToShow='TRADES', useRTH=True,formatDate=1)
+        barSizeSetting=bar_size, whatToShow='TRADES', useRTH=False,formatDate=1)
     except Exception:
         logger.exception(f'Exception fetching historical data for {ticker_contract.symbol}')
         return None
@@ -216,7 +212,7 @@ def trade_buy_stocks(stock_name, quantity):
     contract = contract_objects[stock_name]
     if no_pending_market_order(stock_name):
         try:
-            ord=Order(orderId=ib.client.getReqId(),orderType='MKT',totalQuantity=quantity,action='BUY',account=account_no,tif=ord_validity)
+            ord=Order(orderType='MKT',totalQuantity=quantity,action='BUY',account=account_no,tif=ord_validity)
             trade=ib.placeOrder(contract,ord)
             logger.info(f'BUY order submitted | {stock_name} | qty={quantity}')
             elapsed=0
@@ -237,7 +233,7 @@ def trade_sell_stocks(stock_name, quantity):
     contract = contract_objects[stock_name]
     if no_pending_market_order(stock_name):
         try:
-            ord=Order(orderId=ib.client.getReqId(),orderType='MKT',totalQuantity=quantity,action='SELL',account=account_no,tif=ord_validity)
+            ord=Order(orderType='MKT',totalQuantity=quantity,action='SELL',account=account_no,tif=ord_validity)
             trade=ib.placeOrder(contract,ord)
             logger.info(f'SELL order submitted | {stock_name} | qty={quantity}')
             elapsed=0
@@ -274,9 +270,6 @@ def strategy_condition(df,ticker,quantity):
 
 def main_strategy_code():
     logger.info(f'========== main_strategy_code called | {dt.now(tz=time_zone)} ==========')
-
-    ord=ib.openOrders()
-    print(ord)
 
     for ticker in tickers:
         try:
@@ -382,8 +375,8 @@ def main():
             ct= dt.now(tz=time_zone)
             #run every 5 min
             # if ct.second==1 and ct.minute%5==0:
-            if ct.second<=3 and ct.minute!=last_run_minute:
-                last_run_minute=ct.minute
+            if ct.second<=3 and (ct.day, ct.minute)!=last_run_minute:
+                last_run_minute=(ct.day, ct.minute)
                 logger.info(f'New candle | {ct}')
                 main_strategy_code()
             ib.sleep(1)  # use ib.sleep so the event loop processes order/fill updates
