@@ -4,6 +4,7 @@
 #asynchronous programming->when we have to do some tasks that are I/O bound, we can use asynchronous programming to run multiple tasks asynchronously. This is especially useful when we have to perform tasks that involve waiting for some I/O operations to complete, such as reading/writing files, making network requests, etc.
 #coroutines->coroutines are special functions that can be paused and resumed at a later time. They are defined using the async keyword and can be used to write asynchronous code in a more readable and maintainable way.
 
+#https://www.youtube.com/watch?v=K56nNuBEd0c
 
 # import time
 # def fun1():
@@ -42,7 +43,7 @@ async def fun3():
 async def main():
     # await fun1()
     # await fun2()
-    await asyncio.gather(fun1(),fun2())
+    await asyncio.gather(fun1(),fun2(),fun3())
 
 
 

@@ -15,6 +15,7 @@ contract2=Crypto('BTC','PAXOS','USD')
 contract2=ib.qualifyContracts(contract2)[0]
 
 
+
 # def abc(t):
 #     t=list(t)[0]
 #     print(pendulum.now(time_zone), t.contract.symbol, t.lastTimestamp, t.bid, t.ask)
